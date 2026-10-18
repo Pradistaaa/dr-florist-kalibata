@@ -1,0 +1,806 @@
+---
+const telepon = '+6281912218337';
+const nomorTampil = '0819-1221-8337';
+const whatsapp = 'https://wa.me/6281912218337';
+const alamat =
+  'Jl. Pengadegan Timur I No.12, RT.12/RW.5, Kalibata, Kec. Pancoran, Kota Jakarta Selatan, DKI Jakarta 12770';
+const peta =
+  'https://www.google.com/maps/search/?api=1&query=DR+Florist+Kalibata%2C+Jl.+Pengadegan+Timur+I+No.12%2C+Jakarta+Selatan';
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f6f1" />
+    <meta
+      name="description"
+      content="DR Florist Kalibata, toko bunga di Pancoran, Jakarta Selatan. Buka 24 jam. Hubungi lewat telepon atau WhatsApp."
+    />
+    <title>DR Florist Kalibata — Bunga untuk Setiap Momen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+   <header class="header">
+  <div class="container navigasi">
+    <a class="merek" href="#beranda">
+      <span class="ikon-merek">✿</span>
+      <span class="nama-merek">
+        DR Florist
+        <small>KALIBATA · JAKARTA SELATAN</small>
+      </span>
+    </a>
+
+    <nav class="menu" aria-label="Menu utama">
+      <a href="#layanan">Layanan</a>
+      <a href="#inspirasi">Inspirasi</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <button
+      class="hamburger"
+      type="button"
+      aria-label="Buka menu"
+      aria-expanded="false"
+      aria-controls="menu-hape"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <a class="tombol tombol-kecil tombol-gelap" href={whatsapp} target="_blank" rel="noreferrer">
+      <span>◉</span> WhatsApp
+    </a>
+
+    <nav class="menu-hape" id="menu-hape" aria-label="Menu ponsel">
+      <a href="#layanan">Layanan</a>
+      <a href="#inspirasi">Inspirasi</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <section class="hero" id="beranda">
+        <div class="container hero-grid">
+          <div class="hero-teks">
+            <span class="label-atas">TOKO BUNGA · PANCORAN</span>
+            <h1>Bunga yang<br />membantu kamu<br /><em>mengungkapkan.</em></h1>
+            <p>
+              Untuk ucapan, perhatian, atau kejutan kecil di hari istimewa.
+              Hubungi DR Florist untuk menanyakan bunga dan rangkaian yang
+              tersedia.
+            </p>
+
+            <div class="aksi-hero">
+              <a class="tombol tombol-gelap" href={whatsapp} target="_blank" rel="noreferrer">
+                Tanya lewat WhatsApp <span>↗</span>
+              </a>
+              <a class="tautan" href={peta} target="_blank" rel="noreferrer">
+                Lihat petunjuk arah
+              </a>
+            </div>
+
+            <div class="peringkat">
+              <span class="bintang">★★★★★</span>
+              <span><strong>5,0</strong> dari 6 ulasan Google</span>
+            </div>
+          </div>
+
+          <div class="hero-foto">
+            <img
+              src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1400&q=88"
+              alt="Rangkaian bunga segar berwarna-warni"
+            />
+            <div class="catatan-foto">
+              <span>✿</span>
+              <p>Berikan bunga.<br />Sampaikan rasa.</p>
+            </div>
+            <span class="keterangan-foto">INSPIRASI BUNGA · KALIBATA</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="pita-info">
+        <div class="container info-grid">
+          <div class="info-item">
+            <span class="info-ikon">⌖</span>
+            <span><strong>Kalibata, Pancoran</strong>Jakarta Selatan</span>
+          </div>
+          <div class="info-item">
+            <span class="info-ikon">◷</span>
+            <span><strong>Buka 24 jam</strong>Sesuai informasi yang tercantum</span>
+          </div>
+          <div class="info-item">
+            <span class="info-ikon">☎</span>
+            <span><strong>{nomorTampil}</strong><a href={`tel:${telepon}`}>Telepon toko</a></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="bagian layanan" id="layanan">
+        <div class="container">
+          <div class="judul-bagian">
+            <span class="label-atas">BUNGA UNTUK BERBAGAI KESEMPATAN</span>
+            <h2>Momen berbeda,<br /><em>rasa yang tersampaikan.</em></h2>
+            <p>
+              Tanyakan langsung pilihan rangkaian yang tersedia dan ceritakan
+              momen yang ingin kamu rayakan.
+            </p>
+          </div>
+
+          <div class="kartu-layanan">
+            <article class="kartu">
+              <span class="nomor-kartu">01</span>
+              <span class="simbol-kartu">✿</span>
+              <h3>Hari istimewa</h3>
+              <p>
+                Kirim ucapan untuk ulang tahun, kelulusan, perayaan, dan kabar
+                bahagia lainnya.
+              </p>
+            </article>
+            <article class="kartu kartu-aksen">
+              <span class="nomor-kartu">02</span>
+              <span class="simbol-kartu">♡</span>
+              <h3>Ungkapan sayang</h3>
+              <p>
+                Sampaikan perhatian dan rasa terima kasih dengan hadiah bunga
+                yang bermakna.
+              </p>
+            </article>
+            <article class="kartu">
+              <span class="nomor-kartu">03</span>
+              <span class="simbol-kartu">❀</span>
+              <h3>Pesanan khusus</h3>
+              <p>
+                Hubungi toko untuk membicarakan kebutuhan, pilihan bunga, dan
+                rangkaian yang bisa dibuat.
+              </p>
+            </article>
+          </div>
+          <p class="catatan-kecil">
+            Jenis bunga, rangkaian, dan layanan mengikuti ketersediaan toko.
+          </p>
+        </div>
+      </section>
+
+      <section class="kebutuhan" id="kebutuhan">
+  <div class="container">
+    <span class="label-atas">BUNGA UNTUK MOMENMU</span>
+    <h2>Apa yang sedang kamu rayakan?</h2>
+    <p>Pilih salah satu untuk mulai bertanya lewat WhatsApp.</p>
+
+    <div class="pilihan">
+      <a href="https://wa.me/6281912218337?text=Halo%20DR%20Florist%2C%20saya%20mau%20bertanya%20tentang%20bunga%20untuk%20ulang%20tahun." target="_blank" rel="noreferrer">
+        <span>🎂</span>
+        <strong>Ulang tahun</strong>
+        <small>Kirim ucapan penuh warna</small>
+      </a>
+
+      <a href="https://wa.me/6281912218337?text=Halo%20DR%20Florist%2C%20saya%20mau%20bertanya%20tentang%20bunga%20untuk%20wisuda." target="_blank" rel="noreferrer">
+        <span>🎓</span>
+        <strong>Wisuda</strong>
+        <small>Rayakan pencapaian spesial</small>
+      </a>
+
+      <a href="https://wa.me/6281912218337?text=Halo%20DR%20Florist%2C%20saya%20mau%20bertanya%20tentang%20bunga%20untuk%20pernikahan." target="_blank" rel="noreferrer">
+        <span>💐</span>
+        <strong>Pernikahan</strong>
+        <small>Untuk hari istimewa</small>
+      </a>
+
+      <a href="https://wa.me/6281912218337?text=Halo%20DR%20Florist%2C%20saya%20mau%20bertanya%20tentang%20bunga%20belasungkawa." target="_blank" rel="noreferrer">
+        <span>🤍</span>
+        <strong>Belasungkawa</strong>
+        <small>Sampaikan perhatian dengan tulus</small>
+      </a>
+    </div>
+  </div>
+</section>
+
+      <section class="bagian inspirasi" id="inspirasi">
+        <div class="container">
+          <div class="judul-galeri">
+            <div>
+              <span class="label-atas">PILIHAN WARNA & SUASANA</span>
+              <h2>Inspirasi rangkaian</h2>
+            </div>
+            <p>
+              Beberapa ide untuk membantu memilih suasana bunga yang kamu
+              inginkan.
+            </p>
+          </div>
+
+          <div class="galeri">
+            <figure class="foto-kartu foto-tinggi">
+              <img
+                src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1000&q=85"
+                alt="Buket bunga aneka warna"
+                loading="lazy"
+              />
+              <figcaption>Ceria dan penuh warna</figcaption>
+            </figure>
+            <figure class="foto-kartu">
+              <img
+                src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=800&q=85"
+                alt="Buket mawar merah muda"
+                loading="lazy"
+              />
+              <figcaption>Lembut dan romantis</figcaption>
+            </figure>
+            <figure class="foto-kartu">
+              <img
+                src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=800&q=85"
+                alt="Bunga putih yang anggun"
+                loading="lazy"
+              />
+              <figcaption>Sederhana dan anggun</figcaption>
+            </figure>
+            <figure class="foto-kartu">
+              <img
+                src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&q=85"
+                alt="Rangkaian bunga untuk hadiah"
+                loading="lazy"
+              />
+              <figcaption>Hadiah penuh perhatian</figcaption>
+            </figure>
+          </div>
+          <p class="catatan-kecil">
+            Foto hanya sebagai inspirasi, bukan foto produk DR Florist.
+          </p>
+        </div>
+      </section>
+
+      <section class="ajakan">
+        <div class="container ajakan-dalam">
+          <div>
+            <span class="label-atas label-terang">ADA YANG INGIN DITANYAKAN?</span>
+            <h2>Ceritakan momenmu.<br />Kami bantu mulai dari sana.</h2>
+            <p>
+              Hubungi DR Florist untuk bertanya tentang pilihan bunga dan
+              ketersediaan rangkaian.
+            </p>
+          </div>
+          <a class="tombol tombol-terang" href={whatsapp} target="_blank" rel="noreferrer">
+            ◉ &nbsp; Chat WhatsApp
+          </a>
+        </div>
+      </section>
+
+      <section class="bagian faq" id="faq">
+        <div class="container faq-grid">
+          <div class="judul-faq">
+            <span class="label-atas">INFORMASI TOKO</span>
+            <h2>Pertanyaan<br /><em>yang sering ditanyakan.</em></h2>
+            <p>Belum menemukan jawaban? Tanyakan langsung kepada toko.</p>
+            <a class="tautan" href={whatsapp} target="_blank" rel="noreferrer">
+              Hubungi lewat WhatsApp ↗
+            </a>
+          </div>
+
+          <div class="daftar-faq">
+            <details>
+              <summary>Di mana lokasi DR Florist?</summary>
+              <p>{alamat}</p>
+            </details>
+            <details>
+              <summary>Jam berapa toko buka?</summary>
+              <p>
+                Informasi yang tercantum menyebutkan toko buka 24 jam. Silakan
+                hubungi toko untuk memastikan sebelum berkunjung.
+              </p>
+            </details>
+            <details>
+              <summary>Bagaimana cara menanyakan bunga yang tersedia?</summary>
+              <p>
+                Hubungi toko melalui telepon atau WhatsApp. Tanyakan jenis
+                bunga, rangkaian, dan ketersediaan untuk tanggal yang kamu
+                inginkan.
+              </p>
+            </details>
+            <details>
+              <summary>Apakah bisa memesan rangkaian khusus?</summary>
+              <p>
+                Silakan sampaikan kebutuhanmu kepada toko. Detail pesanan dan
+                ketersediaannya perlu dikonfirmasi langsung dengan DR Florist.
+              </p>
+            </details>
+            <details>
+              <summary>Berapa harga rangkaian bunganya?</summary>
+              <p>
+                Harga tidak dicantumkan di halaman ini. Hubungi toko untuk
+                bertanya tentang harga dan pilihan yang tersedia.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="kontak" id="kontak">
+        <div class="container kontak-grid">
+          <div>
+            <span class="label-atas">KUNJUNGI ATAU HUBUNGI</span>
+            <h2>Temukan kami<br />di Kalibata.</h2>
+            <div class="peringkat peringkat-besar">
+              <strong>5,0</strong>
+              <span><i class="bintang">★★★★★</i><br />6 ulasan Google</span>
+            </div>
+          </div>
+
+          <div class="rincian">
+            <div class="baris-rincian">
+              <span>ALAMAT</span>
+              <p>{alamat}</p>
+            </div>
+            <div class="baris-rincian">
+              <span>TELEPON</span>
+              <p><a href={`tel:${telepon}`}>{nomorTampil}</a></p>
+            </div>
+            <div class="baris-rincian">
+              <span>JAM BUKA</span>
+              <p>Buka 24 jam</p>
+            </div>
+            <div class="aksi-kontak">
+              <a class="tombol tombol-gelap" href={peta} target="_blank" rel="noreferrer">
+                Buka Google Maps ↗
+              </a>
+              <a class="tombol tombol-wa" href={whatsapp} target="_blank" rel="noreferrer">
+                ◉ WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="peta">
+  <iframe
+    src="https://maps.google.com/maps?q=DR%20Florist%20Kalibata%2C%20Jl.%20Pengadegan%20Timur%20I%20No.12%2C%20Jakarta%20Selatan&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    title="Peta lokasi DR Florist Kalibata"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen
+  ></iframe>
+</div>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-dalam">
+        <a class="merek-footer" href="#beranda">✿ DR FLORIST</a>
+        <span>Kalibata · Jakarta Selatan</span>
+        <a href={`tel:${telepon}`}>{nomorTampil}</a>
+      </div>
+
+      <span class="kredit">Developed With ♥ By <strong>Pradista</strong></span>
+
+    </footer>
+
+    <a
+      class="wa-melayang"
+      href={whatsapp}
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Chat DR Florist melalui WhatsApp"
+    >
+      <span>◉</span>
+      <b>Chat WhatsApp</b>
+    </a>
+
+    <script>
+  const tombolMenu = document.querySelector('.hamburger');
+  const menuHape = document.querySelector('.menu-hape');
+
+  tombolMenu?.addEventListener('click', () => {
+    const sedangBuka = menuHape?.classList.toggle('buka') ?? false;
+    tombolMenu.setAttribute('aria-expanded', String(sedangBuka));
+    tombolMenu.setAttribute(
+      'aria-label',
+      sedangBuka ? 'Tutup menu' : 'Buka menu'
+    );
+  });
+
+  menuHape?.querySelectorAll('a').forEach((tautan) => {
+    tautan.addEventListener('click', () => {
+      menuHape.classList.remove('buka');
+      tombolMenu?.setAttribute('aria-expanded', 'false');
+      tombolMenu?.setAttribute('aria-label', 'Buka menu');
+    });
+  });
+</script>
+
+  </body>
+</html>
+
+<style>
+  :root {
+    --tinta: #292522;
+    --redup: #77716c;
+    --kertas: #f8f6f1;
+    --putih: #fffdfa;
+    --wine: #754450;
+    --wine-gelap: #56333d;
+    --mawar: #ead8d2;
+    --sage: #e4e9dd;
+    --emas: #b7915a;
+    --garis: #e8e0d9;
+    --hijau-wa: #168c58;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+  body {
+    margin: 0;
+    background: var(--kertas);
+    color: var(--tinta);
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.65;
+  }
+  a { color: inherit; text-decoration: none; }
+  .container { width: min(1140px, calc(100% - 48px)); margin: 0 auto; }
+
+  .header {
+    position: sticky;
+    z-index: 20;
+    top: 0;
+    background: rgba(248, 246, 241, .94);
+    border-bottom: 1px solid rgba(117, 68, 80, .12);
+    backdrop-filter: blur(14px);
+  }
+  .navigasi { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+  .merek { display: flex; align-items: center; gap: 10px; flex: none; }
+  .ikon-merek { width: 40px; height: 40px; border: 1px solid var(--wine); border-radius: 50%; display: grid; place-items: center; color: var(--wine); font-size: 21px; }
+  .nama-merek { font: 600 19px "Playfair Display", serif; line-height: 1.1; }
+  .nama-merek small { display: block; margin-top: 5px; color: var(--redup); font: 700 8px "DM Sans", sans-serif; letter-spacing: .15em; }
+  .menu { display: flex; align-items: center; gap: 27px; color: #625d58; font-size: 12px; }
+  .menu a:hover, .tautan:hover { color: var(--wine); }
+  .tombol { min-height: 45px; padding: 0 17px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; border-radius: 5px; font-size: 11px; font-weight: 700; transition: .2s; }
+  .tombol-gelap { color: white; background: var(--wine); }
+  .tombol-gelap:hover { background: var(--wine-gelap); transform: translateY(-1px); }
+  .tombol-kecil { min-height: 39px; padding: 0 14px; }
+  .tombol-kecil span { color: #bce7ce; }
+  .tombol-wa { color: white; background: var(--hijau-wa); }
+  .tombol-wa:hover { background: #107447; }
+  .tombol-terang { flex: none; color: var(--wine-gelap); background: var(--putih); }
+  .tombol-terang:hover { background: #f6e8e3; }
+
+  .hero { padding: 43px 0 65px; }
+  .hero-grid { display: grid; grid-template-columns: .92fr 1.08fr; gap: 56px; align-items: center; }
+  .label-atas { color: var(--wine); font-size: 9px; font-weight: 700; letter-spacing: .18em; }
+  h1, h2, h3 { font-family: "Playfair Display", serif; font-weight: 500; line-height: 1.08; }
+  h1 { margin: 20px 0; font-size: clamp(46px, 6.1vw, 72px); letter-spacing: -.045em; }
+  h1 em, h2 em { color: var(--wine); font-weight: 500; }
+  .hero-teks > p { max-width: 440px; margin: 0 0 24px; color: var(--redup); font-size: 14px; line-height: 1.9; }
+  .aksi-hero { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 20px; }
+  .tautan { color: var(--wine); border-bottom: 1px solid #c8b1ae; padding: 7px 0; font-size: 11px; font-weight: 700; }
+  .peringkat { display: flex; align-items: center; gap: 10px; margin-top: 25px; color: var(--redup); font-size: 11px; }
+  .peringkat strong { color: var(--tinta); }
+  .bintang { color: var(--emas); letter-spacing: 2px; font-style: normal; }
+
+  .hero-foto { height: 480px; position: relative; }
+  .hero-foto > img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 48% 48% 5px 5px; }
+  .catatan-foto { position: absolute; left: -24px; bottom: 24px; display: flex; align-items: center; gap: 11px; padding: 13px 18px; background: var(--sage); color: #465044; }
+  .catatan-foto > span { color: var(--wine); font-size: 27px; }
+  .catatan-foto p { margin: 0; font: 500 13px/1.3 "Playfair Display", serif; }
+  .keterangan-foto { position: absolute; right: -15px; top: 30px; writing-mode: vertical-rl; color: var(--redup); font-size: 8px; letter-spacing: .15em; }
+
+  .pita-info { padding: 18px 0; background: var(--mawar); }
+  .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+  .info-item { display: flex; align-items: center; gap: 10px; color: #6d625e; font-size: 10px; }
+  .info-item strong { display: block; color: var(--tinta); font-size: 11px; }
+  .info-item a { color: var(--wine); font-weight: 700; }
+  .info-ikon { width: 35px; height: 35px; display: grid; place-items: center; flex: none; border-radius: 50%; background: rgba(255,255,255,.65); color: var(--wine); }
+
+  .bagian { padding: 82px 0; }
+  .judul-bagian { display: grid; grid-template-columns: 1fr .8fr; gap: 10px 35px; align-items: end; margin-bottom: 30px; }
+  .judul-bagian .label-atas { grid-column: 1 / -1; }
+  .judul-bagian h2, .judul-faq h2, .kontak h2 { margin: 0; font-size: clamp(36px, 4.8vw, 55px); letter-spacing: -.04em; }
+  .judul-bagian > p { max-width: 370px; margin: 0; color: var(--redup); font-size: 12px; line-height: 1.8; }
+  .kartu-layanan { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .kartu { min-height: 235px; position: relative; padding: 24px; background: var(--putih); border: 1px solid var(--garis); }
+  .kartu-aksen { background: var(--sage); border-color: transparent; }
+  .nomor-kartu { position: absolute; top: 20px; right: 21px; color: #a6a099; font-size: 10px; letter-spacing: .1em; }
+  .simbol-kartu { display: block; color: var(--wine); font-size: 25px; margin-bottom: 26px; }
+  .kartu h3 { margin: 0 0 10px; font-size: 22px; }
+  .kartu p { margin: 0; max-width: 280px; color: var(--redup); font-size: 11px; line-height: 1.8; }
+  .catatan-kecil { margin: 11px 0 0; color: #8b837d; font-size: 9px; }
+
+  .inspirasi { background: var(--putih); }
+  .judul-galeri { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 27px; }
+  .judul-galeri h2 { margin: 10px 0 0; font-size: clamp(35px, 4.5vw, 50px); }
+  .judul-galeri > p { max-width: 330px; margin: 0; color: var(--redup); font-size: 12px; }
+  .galeri { display: grid; grid-template-columns: 1.1fr .9fr .9fr; grid-template-rows: 220px 220px; gap: 11px; }
+  .foto-kartu { position: relative; min-height: 0; overflow: hidden; margin: 0; background: var(--mawar); }
+  .foto-tinggi { grid-row: span 2; }
+  .foto-kartu img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .4s; }
+  .foto-kartu:hover img { transform: scale(1.035); }
+  .foto-kartu::after { content: ""; position: absolute; inset: 55% 0 0; background: linear-gradient(transparent, rgba(35, 27, 29, .56)); }
+  .foto-kartu figcaption { position: absolute; z-index: 1; left: 14px; bottom: 12px; color: white; font: 500 16px "Playfair Display", serif; }
+
+  .ajakan { padding: 55px 0; color: white; background: var(--wine-gelap); }
+  .ajakan-dalam { display: flex; align-items: center; justify-content: space-between; gap: 25px; }
+  .label-terang { color: #ead4c9; }
+  .ajakan h2 { margin: 12px 0 8px; font-size: clamp(30px, 4vw, 43px); }
+  .ajakan p { margin: 0; color: #e3d5d4; font-size: 11px; }
+
+  .faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 65px; }
+  .judul-faq h2 { margin: 12px 0; }
+  .judul-faq > p { margin: 0 0 17px; color: var(--redup); font-size: 11px; }
+  .daftar-faq details { border-bottom: 1px solid var(--garis); }
+  .daftar-faq details:first-child { border-top: 1px solid var(--garis); }
+  .daftar-faq summary { position: relative; padding: 17px 28px 17px 0; cursor: pointer; list-style: none; font-size: 12px; font-weight: 700; }
+  .daftar-faq summary::-webkit-details-marker { display: none; }
+  .daftar-faq summary::after { content: "+"; position: absolute; right: 2px; top: 12px; color: var(--wine); font-size: 19px; font-weight: 400; }
+  .daftar-faq details[open] summary::after { content: "−"; }
+  .daftar-faq details p { margin: -3px 20px 17px 0; color: var(--redup); font-size: 11px; line-height: 1.8; }
+
+  .kontak { padding: 74px 0; background: var(--sage); }
+  .kontak-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 55px; }
+  .kontak h2 { margin-top: 12px; }
+  .peringkat-besar { margin-top: 24px; }
+  .peringkat-besar > strong { color: var(--wine); font: 500 37px "Playfair Display", serif; }
+  .baris-rincian { display: grid; grid-template-columns: 85px 1fr; gap: 15px; padding: 14px 0; border-bottom: 1px solid rgba(41,37,34,.13); }
+  .baris-rincian:first-child { border-top: 1px solid rgba(41,37,34,.13); }
+  .baris-rincian > span { color: #706c62; font-size: 9px; font-weight: 700; letter-spacing: .12em; }
+  .baris-rincian p { margin: 0; font-size: 11px; font-weight: 600; line-height: 1.75; }
+  .aksi-kontak { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+
+  .footer { padding: 19px 0; background: var(--putih); color: var(--redup); font-size: 9px; }
+  .footer-dalam { display: flex; align-items: center; justify-content: space-between; gap: 15px; }
+  .merek-footer { color: var(--wine); font-weight: 700; letter-spacing: .1em; }
+
+  .wa-melayang {
+    position: fixed; z-index: 30; right: 20px; bottom: 20px;
+    display: flex; align-items: center; gap: 9px;
+    padding: 12px 17px; border-radius: 999px;
+    color: white; background: var(--hijau-wa);
+    box-shadow: 0 8px 25px rgba(20, 86, 54, .25);
+    font-size: 11px;
+  }
+  .wa-melayang:hover { background: #107447; transform: translateY(-2px); }
+  .wa-melayang span { font-size: 16px; }
+
+  @media (max-width: 800px) {
+    .container { width: min(100% - 36px, 640px); }
+    .menu { display: none; }
+    .hero { padding: 25px 0 54px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 22px; }
+    .hero-foto { height: 370px; grid-row: 1; }
+    .hero-teks { grid-row: 2; }
+    .catatan-foto { left: -5px; }
+    .bagian { padding: 64px 0; }
+    .kartu-layanan { grid-template-columns: 1fr 1fr; }
+    .kartu:last-child { grid-column: 1 / -1; min-height: 190px; }
+    .faq-grid, .kontak-grid { grid-template-columns: 1fr; gap: 27px; }
+    .judul-faq h2 { font-size: 43px; }
+  }
+
+  @media (max-width: 540px) {
+    .container { width: calc(100% - 30px); }
+    .navigasi { min-height: 68px; }
+    .nama-merek { font-size: 16px; }
+    .nama-merek small { font-size: 7px; }
+    .tombol-kecil { min-height: 36px; padding: 0 11px; font-size: 9px; }
+    .hero-foto { height: 300px; }
+    h1 { font-size: 47px; }
+    .keterangan-foto { right: -9px; font-size: 7px; }
+    .catatan-foto { bottom: 15px; padding: 10px 12px; }
+    .info-grid { grid-template-columns: 1fr 1fr; gap: 13px 8px; }
+    .info-item { font-size: 9px; gap: 7px; }
+    .info-item strong { font-size: 10px; }
+    .info-item:last-child { grid-column: 1 / -1; }
+    .judul-bagian { grid-template-columns: 1fr; gap: 10px; }
+    .judul-bagian .label-atas { grid-column: auto; }
+    .judul-bagian h2 { font-size: 38px; }
+    .kartu-layanan { grid-template-columns: 1fr; }
+    .kartu, .kartu:last-child { grid-column: auto; min-height: 0; padding: 21px; }
+    .simbol-kartu { margin-bottom: 17px; }
+    .judul-galeri { align-items: flex-start; flex-direction: column; gap: 10px; }
+    .galeri { grid-template-columns: 1fr 1fr; grid-template-rows: 270px 165px 165px; gap: 8px; }
+    .foto-tinggi { grid-column: 1 / -1; grid-row: auto; }
+    .foto-kartu figcaption { left: 9px; bottom: 8px; font-size: 13px; }
+    .ajakan-dalam { align-items: flex-start; flex-direction: column; }
+    .ajakan h2 { font-size: 31px; }
+    .judul-faq h2, .kontak h2 { font-size: 39px; }
+    .baris-rincian { grid-template-columns: 68px 1fr; gap: 9px; }
+    .footer-dalam { align-items: flex-start; flex-direction: column; gap: 5px; }
+    .wa-melayang { right: 12px; bottom: 12px; padding: 11px 14px; }
+  }
+
+  .kebutuhan {
+  padding: 76px 0;
+  background: #eee5df;
+}
+
+.kebutuhan h2 {
+  margin: 12px 0 8px;
+  font: 500 clamp(34px, 5vw, 48px)/1.1 "Playfair Display", serif;
+  color: #292522;
+}
+
+.kebutuhan > .container > p {
+  margin: 0 0 26px;
+  color: #77716c;
+  font-size: 13px;
+}
+
+.pilihan {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.pilihan a {
+  display: flex;
+  min-height: 155px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 6px;
+  padding: 18px;
+  border: 1px solid #e2d5cf;
+  background: #fffdfa;
+  color: #292522;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.pilihan a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px #7544501c;
+}
+
+.pilihan a > span {
+  margin-bottom: auto;
+  color: #754450;
+  font-size: 25px;
+}
+
+.pilihan strong {
+  font: 600 18px "Playfair Display", serif;
+}
+
+.pilihan small {
+  color: #77716c;
+  font-size: 10px;
+}
+
+@media (max-width: 700px) {
+  .pilihan {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .pilihan a {
+    min-height: 135px;
+    padding: 13px;
+  }
+
+  .pilihan strong {
+    font-size: 16px;
+  }
+}
+
+.kredit {
+  display: block;
+  margin-top: 12px;
+  margin-left: 24px;
+  color: #77716c;
+  font-size: 10px;
+  text-align: left;
+}
+
+.kredit strong {
+  color: #754450;
+  font-weight: 700;
+}
+
+.kontak-grid {
+  grid-template-columns: 0.7fr 1fr 1.3fr;
+  align-items: start;
+}
+
+.peta {
+  min-height: 300px;
+  overflow: hidden;
+  border: 1px solid rgba(41, 37, 34, 0.13);
+}
+
+.peta iframe {
+  display: block;
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+@media (max-width: 800px) {
+  .kontak-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .peta iframe {
+    height: 280px;
+  }
+}
+
+.hamburger,
+.menu-hape {
+  display: none;
+}
+
+.hamburger {
+  width: 42px;
+  height: 40px;
+  padding: 9px;
+  border: 1px solid #d8c9c4;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  margin: 4px 0;
+  background: #754450;
+}
+
+@media (max-width: 800px) {
+  .navigasi {
+    position: relative;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  .menu-hape {
+    position: absolute;
+    z-index: 30;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+    display: none;
+    padding: 10px 18px;
+    background: #fffdfa;
+    border: 1px solid #e8e0d9;
+    box-shadow: 0 10px 20px #29252218;
+  }
+
+  .menu-hape a {
+    display: block;
+    padding: 12px 4px;
+    color: #292522;
+    font-size: 13px;
+  }
+
+  .menu-hape.buka {
+    display: block;
+  }
+}
+
+.peringkat-besar {
+  margin-bottom: 32px;
+}
+
+@media (max-width: 800px) {
+  .peringkat-besar {
+    margin-bottom: 12px;
+  }
+}
+
+</style>
