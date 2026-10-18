@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "astro dev --host 0.0.0.0",
-    "build": "astro build",
-    "preview": "astro preview --host 0.0.0.0"
-  },
+  "dev": "astro dev --host 0.0.0.0",
+  "build": "node ./node_modules/astro/astro.js build",
+  "preview": "astro preview --host 0.0.0.0"
+},
   "dependencies": {
     "@astrojs/check": "^0.9.10",
     "astro": "^7.4.0",
