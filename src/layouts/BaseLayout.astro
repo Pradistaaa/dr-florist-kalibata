@@ -6,6 +6,28 @@ const { title, description } = Astro.props;
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f7f3ef">
   <meta name="description" content="DR Florist Kalibata — toko bunga di Pancoran, Jakarta Selatan. Buka 24 jam. Hubungi 0819-1221-8337.">
+
+    <!-- Google tag (Google Ads) -->
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-18575945352"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18575945352');
+  </script>
+
+  <!-- Konversi: klik WhatsApp -->
+  <script is:inline>
+    document.addEventListener('click', function (e) {
+      var el = e.target.closest && e.target.closest('a[href*="wa.me"], a[href*="whatsapp.com"]');
+      if (!el) return;
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18575945352/WXmuCOS1r7kdEIjd2ZlF',
+        'transport_type': 'beacon'
+      });
+    }, true);
+  </script>
+
   <title>DR Florist Kalibata — Hadiah yang Tumbuh dari Rasa</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
