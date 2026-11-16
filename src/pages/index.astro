@@ -75,6 +75,28 @@ const produk = [
       name="description"
       content="DR Florist Kalibata, toko bunga di Pancoran, Jakarta Selatan. Buka 24 jam. Hubungi lewat telepon atau WhatsApp."
     />
+
+    <!-- Google tag (Google Ads) -->
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-18575945352"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18575945352');
+</script>
+
+<!-- Konversi: klik WhatsApp -->
+<script is:inline>
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest && e.target.closest('a[href*="wa.me"], a[href*="whatsapp.com"]');
+    if (!el) return;
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18575945352/WXmuCOS1r7kdEIjd2ZlF',
+      'transport_type': 'beacon'
+    });
+  }, true);
+</script>
+
     <title>DR Florist Kalibata — Bunga untuk Setiap Momen</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
